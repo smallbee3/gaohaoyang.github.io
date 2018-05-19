@@ -5,15 +5,16 @@
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
         <nav id="headerNav">
             <ul>
-                <li>
+                <!-- <li>
                     {% if page.url == '/' %}
                     <a class="active" href="{{site.baseurl}}/">
                         {% else %}
                     <a href="{{site.baseurl}}/">
                     {% endif %}
-                        <i class="fa fa-home"></i>Home
+                        <i class="fa fa-home"></i>
+                        Home
                     </a>
-                </li>
+                </li> -->
 
                 {% for my_page in site.pages %}
                     {% if my_page.type == 'page' %}
@@ -23,7 +24,8 @@
                             {% else %}
                         <a href="{{ my_page.url | prepend: site.baseurl }}">
                         {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
+                            <!-- <i class="fa fa-{{my_page.icon}}"></i> -->
+                            {{ my_page.title }}
                         </a>
                     </li>
                     {% endif %}

@@ -4,8 +4,8 @@ layout: default
 
 <div class="page clearfix" index>
     <div class="left">
-        <h1>Welcome to HyG's Blog!</h1>
-        <small>这里记录着我的前端学习之路</small>
+        <!-- <h1>Welcome to HyG's Blog!</h1> -->
+        <!-- <small>这里记录着我的前端学习之路</small> -->
         <hr>
         <ul>
             {% for post in paginator.posts %}
@@ -68,7 +68,7 @@ layout: default
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
         <div class="wrap">
-            <div class="side">
+            <!-- <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     Recent Posts
@@ -78,12 +78,12 @@ layout: default
                         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
                 </ul>
-            </div>
+            </div> -->
 
             <!-- Content -->
             <div class="side ">
                 <div>
-                    <i class="fa fa-th-list"></i>
+                    <!-- <i class="fa fa-th-list"></i> -->
                     Categories
                 </div>
                 <ul class="content-ul" cate>
@@ -100,7 +100,7 @@ layout: default
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
-            <div class="side">
+            <!-- <div class="side">
                 <div>
                     <i class="fa fa-tags"></i>
                     Tags
@@ -142,7 +142,7 @@ layout: default
                       <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
                     {% endfor %}
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="side">
                 <div>
